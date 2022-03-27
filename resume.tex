@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+\definecolor{pastelred}{HTML}{FF5A5F}
+
+\usepackage{geometry}
+\geometry{margin=0.5in}
+
+\usepackage{fontawesome}
+
+\linespread{1.15}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.39\textwidth}
+	\vspace{-\baselineskip}
+
+	\colorbox{black}{{{\fontsize{20}{30}\selectfont \textcolor{white}{\textbf{\MakeUppercase{Alexander}}}}}} % First name
+	
+	\colorbox{black}{{{\fontsize{20}{30}\selectfont \textcolor{white}{\textbf{\MakeUppercase{Kirillov}}}}}} % Last name
+	
+	\vspace{8pt}
+	
+	% {\Large Job title} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.34\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{Home}{13}{Moscow, Russia}
+	\vspace{5px}
+	\\
+	\icon{At}{13}{\href{mailto:sashaakir@yandex.com}{sashaakir@yandex.com}}\\
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{Phone}{13}{+7 926 344 34 42}
+	\vspace{5px}
+	\\
+	\icon{Github}{13}{\href{https://github.com/sasha-kir}{github.com/sasha-kir}}\\
+\end{minipage}
+
+\vspace{1cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsection{About me}
+\medskip
+{\large I received a degree in computational linguistics, but have decided to pursue a career in IT instead. My first job was an internship and then a full-time position as a QA engineer, and I still am very passionate about testing. However, I have found that creating user interfaces is what really brings me joy, and I currently work as a frontend developer with experience primarily with React and Typescript.}
+
+\vspace{10px}
+
+\cvsection{Programming skills}
+\medskip
+
+	\vspace{-\baselineskip}
+	
+	\medskip
+	
+	\cvskill{\large Languages}  {\large Javascript / Typescript, Python (pytest, Flask), Go (basic)} 
+	
+	\divider
+	
+	\cvskill{\large Frontend} {\large React, Redux, HTML \& CSS, PostCSS, Jest, Sentry} 
+	
+	\divider
+	
+	\cvskill{\large Technologies} {\large Git (github flow), Gitlab CI, SQL, Docker} 
+
+\vspace{15px}
+
+\cvsection{Work experience}
+\medskip
+\begin{entrylist}
+	\entry
+		{2021--present}
+		{\Large Frontend developer (React)}
+		{\Large \faMapMarker \hspace{1px} Ozon\\}
+		{\large
+			\vspace{-30px}
+			
+			\begin{itemize}
+				\item creating pixel-perfect layouts based on designs in Figma
+				
+				\item configured unit testing with jest and react-testing-library
+				
+				\item helped refactor components from JS with classes to TS with hooks
+			
+			\end{itemize}
+			
+			\vspace{-5px}
+		}
+		
+	\entry
+		{2019--2021}
+		{\Large Quality Assurance engineer}
+		{\Large \faMapMarker \hspace{1px} Ozon\\}
+		{\large 
+			\vspace{-30px}
+			
+			\begin{itemize}
+				\item performed manual testing of Go-based microservices
+				
+				\item supported existing integration testing project based on pytest
+				
+				\item helped create an end-to-end testing project based on WebdriverIO
+			
+			\end{itemize}
+			
+			\vspace{-5px}
+		}
+\end{entrylist}
+
+\vspace{5px}
+
+\begin{minipage}[t]{0.25\textwidth}
+	\vspace{-\baselineskip}
+	
+	\cvsection{Languages}
+	\medskip
+	
+	\cvskill{\large Russian}{\large Native} 
+	
+	\divider
+	
+	\cvskill{\large English}{\large Advanced} 
+	
+	\divider
+	
+	\cvskill{\large Spanish}{\large B2} 
+	
+	\divider
+	
+	\cvskill{\large German}{\large A2}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.7\textwidth}
+	\vspace{-\baselineskip}
+	
+	\cvsection{Education}
+	\medskip
+	\begin{entrylist}
+		\entry
+			{2015--2019}
+			{\Large Lomonosov Moscow State University}
+			{}
+			{\large Bachelor's degree with honors in Fundamental and Applied Linguistics \\
+		
+			\vspace{-5px}
+			}
+			
+		\entry
+			{2018}
+			{\Large Universidad de Alicante (Spain)}
+			{}
+			{\large A semester-long internship at the Polytechnic faculty \\
+		
+			\vspace{-5px}
+			}
+	\end{entrylist}	
+\end{minipage}
+
+\end{document}
